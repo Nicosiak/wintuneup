@@ -1,5 +1,14 @@
 @echo off
 
+@echo off
+color 0a
+echo  _____ ____  _   _ 
+echo |  ___|  _ \| | | |
+echo | |_  | |_l | | | |
+echo |  _| |  __/| |_| |
+echo |_|   |_|    \___/ 
+
+
 ::////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 :: create restore point?
 ::remove programs
@@ -98,3 +107,16 @@ wuauclt /detectnow /updatenow /install
 ::adjust vidual effects
 
 :: a way to automaticall install all updates and optional updates
+
+The powercfg command is a tool in Windows that allows you to manage the power settings of your system. Here are some common powercfg commands that you can use in the Command Prompt:
+
+powercfg /list: Lists all the power plans on your system.
+powercfg /setactive <GUID>: Sets the specified power plan as the active plan. Replace <GUID> with the GUID of the power plan you want to activate.
+powercfg /query <GUID>: Displays detailed information about the specified power plan. Replace <GUID> with the GUID of the power plan you want to view.
+powercfg /hibernate on: Enables hibernation on your system.
+powercfg /hibernate off: Disables hibernation on your system.
+powercfg /devicequery wake_armed: Lists all the devices that are allowed to wake the system from sleep.
+powercfg /deviceenablewake <device ID>: Enables the specified device to wake the system from sleep. Replace <device ID> with the ID of the device you want to enable.
+powercfg /devicedisablewake <device ID>: Disables the specified device from waking the system from sleep. Replace <device ID> with the ID of the device you want to disable.
+
+encrypt with a program put both programs on a flash drive and use same program to unencrypt
